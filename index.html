@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GCS</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      width: 80%;
+      margin: 40px auto;
+      background-color: #f9f9f9;
+      padding: 20px;
+      border: 1px solid #ddd;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .book1, .book2, .book3, .book4, .book5 {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 10px;
+    }
+    input[type="number"] {
+      width: 100%;
+      height: 40px;
+      margin-bottom: 20px;
+      padding: 10px;
+      border: 1px solid #ccc;
+    }
+    button {
+      background-color: #4CAF50;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #3e8e41;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: left;
+    }
+    th {
+      background-color: #f0f0f0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div>
+      <div class="book1">
+        <label>Computer</label>
+        <input id="bookOne" type="number" name="" placeholder="Marks">
+      </div>
+      <div class="book2">
+        <label>English</label>
+        <input id="bookTwo" type="number" name="" placeholder="Marks">
+      </div>
+      <div class="book3">
+        <label>Chemistry</label>
+        <input id="bookThree" type="number" name="" placeholder="Marks">
+      </div>
+      <div class="book4">
+        <label>Physics</label>
+        <input id="bookFour" type="number" name="" placeholder="Marks">
+      </div>
+      <div class="book5">
+        <label>Biology</label>
+        <input id="bookFive" type="number" name="" placeholder="Marks">
+      </div>
+      <div>
+        <button onclick="abc()">Calculate</button>
+      </div>
+    </div>
+    <div>
+      <table>
+        <tr>
+          <td>Total Marks:</td>
+          <td>500</td>
+        </tr>
+        <tr>
+          <td>Obtained Marks:</td>
+          <td id="Obtain"></td>
+        </tr>
+        <tr>
+          <td>Percentage:</td>
+          <td id="per"></td>
+        </tr>
+        <tr>
+          <td>Grade:</td>
+          <td id="grade"></td>
+        </tr>
+        <tr>
+          <td>Remarks:</td>
+          <td id="remarks"></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+  <script src="./grade.js"></script>
